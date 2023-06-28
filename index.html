@@ -6,69 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch App</title>
     <link rel="stylesheet" href="styles/index.css">
-    <!-- <style>
-        
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    font-size: 24px;
-    text-align: center;
-}
-
-#time {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-}
-
-hr {
-    margin: 20px 0;
-    border: none;
-    border-top: 1px solid #916A6B;
-}
-
-#lap {
-    font-size: 18px;
-    text-align: center;
-}
-
-button {
-    background-color: #C4263F;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-}
-
-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-footer {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.kontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-    </style> -->
+   
 </head>
 
 <body>
@@ -92,66 +30,7 @@ footer {
         </p>
     </footer>
     <script src="scripts/index.js"></script>
-    <!--<script>
-                    const timeElement = document.getElementById('time');
-                    const lapTimeElement = document.getElementById('lap');
-                    const leftButton = document.getElementById('btnLeft');
-                    const rightButton = document.getElementById('btnRight');
-                    const lapTimes = [];
-                    let elapsedTime = 0;
-                    let interval;
-                    let isCounting = false;
-                    const formatTime = time => {
-                        const minutes = Math.floor(time / (60 * 100));
-                        const seconds = Math.floor((time / 100) % 60);
-                        const miliseconds = time % 100;
-                        return (
-                            (minutes < 10 ? '0' + minutes: minutes)
-                            + ':'
-                            + (seconds < 10 ? '0' + seconds: seconds)
-                            + '.'
-                            + (miliseconds < 10 ? '0' + miliseconds: miliseconds)
-                        );
-                    };
-                    const startCounting = () => {
-                        if ((isCounting = !isCounting)) {
-                            interval = setInterval(() => {
-                                elapsedTime += 10;
-                                displayTime();
-                                console.log(elapsedTime);
-                            }, 10);
-                            leftButton.innerText = 'pause';
-                            rightButton.innerText = 'lap';
-                        } else {
-                            clearInterval(interval);
-                            leftButton.innerText = 'start';
-                            rightButton.innerText = 'reset';
-                        }
-                    };
-                    const resetCount = () => {
-                        if (isCounting) {
-                            console.log('lap');
-                        } else {
-                            elapsedTime = 0;
-                            displayTime();
-                        }
-                    };
-                    const displayTime = () => {
-                        timeElement.innerText = formatTime(elapsedTime);
-                        if (!elapsedTime) {
-                            rightButton.disabled = true;
-                            rightButton.style.opacity = 0.5;
-                            rightButton.style.cursor = 'not-allowed';
-                        } else {
-                            rightButton.disabled = false;
-                            rightButton.style.opacity = 1;
-                            rightButton.style.cursor = 'pointer';
-                        }
-                    };
-                    displayTime();
-                    leftButton.addEventListener('click', startCounting);
-                    rightButton.addEventListener('click', resetCount);
-                </script>-->
+  
 </body>
 
 </html>
