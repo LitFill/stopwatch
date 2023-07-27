@@ -12,7 +12,6 @@
     border-radius: 8px;
 } */
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -34,7 +33,7 @@ p {
 hr {
     margin: 20px 0;
     border: none;
-    border-top: 1px solid #916A6B;
+    border-top: 1px solid #916a6b;
 }
 
 #lap {
@@ -43,7 +42,7 @@ hr {
 }
 
 button {
-    background-color: #C4263F;
+    background-color: #c4263f;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -54,6 +53,11 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 button:disabled {
@@ -61,10 +65,15 @@ button:disabled {
     cursor: not-allowed;
 }
 
-footer {
-    font-size: 12px;
+footer.rozy {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 8px;
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    opacity: 0.8;
 }
 
 .kontainer {
